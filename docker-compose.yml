@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app/
+    command:
+      - scripts/start_app.sh
+    ports:
+      - "8000:8000"

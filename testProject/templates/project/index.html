@@ -1,0 +1,9 @@
+{% if memoList %}
+    <ul>
+    {% for memo in memoList %}
+        <li>{{ memo.message }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Memos.</p>
+{% endif %}
